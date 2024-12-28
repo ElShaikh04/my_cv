@@ -1,0 +1,127 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #1e1e1e;
+    color: #eee;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    overflow-x: hidden; 
+}
+
+body[data-theme="light"] {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem; 
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 2rem;
+    border: 3px solid #bada55;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+header {
+    background-color: #282828;
+    color: #fff;
+    padding: 1rem 0; 
+    text-align: center;
+}
+
+nav {
+    display: flex;         
+    flex-wrap: wrap;    
+    justify-content: center; 
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0.5rem 1rem;  
+    transition: color 0.3s ease;
+    display: inline-block; 
+
+}
+
+
+
+section {
+    padding: 2rem 1rem; 
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.project {
+    width: 90%; 
+    max-width: 300px;  
+    margin: 1rem;
+    border: 1px solid #444;
+    padding: 1rem;       
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+
+.project img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+
+footer {
+    background-color: #282828;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;  
+}
+
+#themeToggle {
+    background-color: #444;
+    color: #eee;
+    border: none;
+    padding: 0.5rem 1rem;  
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0.5rem 1rem; 
+}
+
+@media (max-width: 768px) {
+    nav a {
+        margin: 0.5rem 0.5rem; 
+        font-size: 1em;
+    }
+    .project {
+        width: 100%; 
+        margin: 1rem 0;
+    }
+}
